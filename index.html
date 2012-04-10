@@ -1,31 +1,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0021)http://192.168.1.103/ -->
-<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Live example of Markdown</title>
+  <link href="css/showdown-gui.css" media="screen" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="js/showdown.js"></script>
+	<script type="text/javascript" src="js/showdown-gui.js"></script>
+</head>
 
-    <TITLE>Markdown live example</TITLE>
-    <LINK href="css/scaffold.css" media="screen" rel="stylesheet" type="text/css">
-    <LINK href="css/styles.css" media="screen" rel="stylesheet" type="text/css">
-  </HEAD><BODY>
-    <DIV id="wrapper">
-      <DIV id="brand">
-      </DIV>
-      <DIV id="menu">
-        <A href="http://github.com/gagoar/markdown-live-example/archives/master" target="_blank">Download source</A>
-        <A href="http://gagoar.github.com" target="_blank">About Gagoar</A>
-      </DIV>
+<body>
 
+	<div id="pageHeader">
+		<h1>Live Example for Markdown syntax</h1>
+		<h4><a href="http://www.attacklab.net/showdown-gui.html">Showdown</a> a javascript port of <a href="http://daringfireball.net/projects/markdown/" title="The Markdown web site">Markdown</a></h4>
+	</div>
+	
+	<div id="leftContainer">
+		<div class="paneHeader">
+			<span>Input</span>
+		</div>
+    <textarea id="inputPane" cols="80" rows="20" class="pane"></textarea> 
+	</div>
 
-      <H1>Markdown</H1>
+	<div id="rightContainer">
+		<div class="paneHeader">
+			<select id="paneSetting">
+				<option value="previewPane">Preview</option>
+				<option value="outputPane">HTML Output</option>
+			</select>
+		</div>
+	
+		<textarea id="outputPane" class="pane" cols="80" rows="20" readonly="readonly"></textarea>
+	
+		<div id="previewPane" class="pane"><noscript><h2>You'll need to enable Javascript to use this tool.</h2></noscript></div>
 
-      <p>DNS server pipe-backend for PowerDns with particular behavior. You can serve different A records of any domain depending on the query request client. Usefull in Wan and Lan environments. </p>
+<textarea id="syntaxPane" class="pane" cols="80" rows="20" readonly="readonly"></textarea>
+	</div>
+	<div id="footer">
+		<span id="byline">
+		</span>
+			<select id="convertTextSetting">
+				<option value="delayed">in the background</option>
+				<option value="continuous">every keystroke</option>
+				<option value="manual">manually</option>
+			</select>
+		<span id="convertTextControls">
+			<button id="convertTextButton" type="button" title="Render for me">
+				Render for me
+			</button>
 
-      <H2>The Admin Website</H2>
-
-      <p>This system is provided with a simple and usefull User Interface that allows you to quickly and easily manage it.<br/><br/>
-      <em>Stylesheet:</em> the css structure has three sections, the first one reset the default styles, the second one has tipography and colors definitions. You can modify them without apply any layout changes because you have that propertie's definitions in a separate and last section.</p>
-
-
-    </DIV>
-    <div id="footer"></div>
-
-</BODY></HTML>
+		</span>
+		<div id="processingTime" title="Last processing time">0 ms</div>
+	</div>
+	</body>
+</html>
