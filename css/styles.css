@@ -56,7 +56,7 @@ font-size: 13px;
 line-height: 15px;
 color: #333;
 background-color: #0d202e;
-background: #0d202e url(images/body_bk.png) left top repeat;
+background: #0d202e url(../images/body_bk.png) left top repeat;
 }
 
 #wrapper{
@@ -142,7 +142,7 @@ left: -23px;
 top:20px;
 width: 840px;
 height: 95px;
-background: transparent url(images/header.png) left top no-repeat;}
+background: transparent url(../images/header.png) left top no-repeat;}
 
 #menu{
 display: block;
@@ -285,7 +285,7 @@ position: relative;
 width: 800px;
 height: 22px;
 margin: 0 auto;
-background: transparent url(images/footer.png) left top no-repeat;
+background: transparent url(../images/footer.png) left top no-repeat;
 padding-top: 25px;
 }
  
