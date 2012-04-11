@@ -3,32 +3,70 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<title>Live example of Markdown</title>
-  <link href="css/showdown-gui.css" media="screen" rel="stylesheet" type="text/css"/>
-	<script type="text/javascript" src="js/showdown.js"></script>
-	<script type="text/javascript" src="js/showdown-gui.js"></script>
+  <link rel="stylesheet" href="css/showdown-gui.css" type="text/css"/>
+  <link rel="stylesheet" href="http:/twitter.github.com/bootstrap/assets/css/bootstrap.css" type="text/css"/>
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .space {
+      margin-top: 5px;
+      float: right;
+      margin-left: 5px;
+    }
+  </style>
+  <link rel="stylesheet" href="http:/twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" type="text/css"/>
 </head>
 
 <body>
-
-	<div id="pageHeader">
-		<h1>Live Example for Markdown syntax</h1>
-		<h4><a href="http://www.attacklab.net/showdown-gui.html">Showdown</a> a javascript port of <a href="http://daringfireball.net/projects/markdown/" title="The Markdown web site">Markdown</a></h4>
-	</div>
-	
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Live Example for Markdown syntax</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="https://github.com/gagoar">About</a></li>
+            <li class="active" ><a href="http://www.attacklab.net/showdown-gui.html">Showdown</a></li>
+            <li class="divider-vertical"> <span class="span5"></span></li>
+          <li>
+          <select class="space span2 pull-right" id="paneSetting">
+            <option value="previewPane">Preview</option>
+            <option value="outputPane">HTML Output</option>
+          </select>
+          <select class="space span2 pull-right" id="convertTextSetting">
+            <option value="delayed">in the background</option>
+            <option value="continuous">every keystroke</option>
+            <option value="manual">manually</option>
+          </select>
+          </li>
+          </ul>
+          <span id="convertTextControls">
+            <button id="convertTextButton" type="button" class="btn" title="Render for me">
+              Render for me
+            </button>
+            <span id="processingTime" class="label label-info">0 ms</span>
+          </span>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+  <div class="container">
 	<div id="leftContainer">
 		<div class="paneHeader">
-			<span>Input</span>
 		</div>
     <textarea id="inputPane" cols="80" rows="20" class="pane"></textarea> 
 	</div>
 
 	<div id="rightContainer">
 		<div class="paneHeader">
-			<select id="paneSetting">
-				<option value="previewPane">Preview</option>
-				<option value="outputPane">HTML Output</option>
-			</select>
-		</div>
+					</div>
 	
 		<textarea id="outputPane" class="pane" cols="80" rows="20" readonly="readonly"></textarea>
 	
@@ -39,18 +77,26 @@
 	<div id="footer">
 		<span id="byline">
 		</span>
-			<select id="convertTextSetting">
-				<option value="delayed">in the background</option>
-				<option value="continuous">every keystroke</option>
-				<option value="manual">manually</option>
-			</select>
-		<span id="convertTextControls">
-			<button id="convertTextButton" type="button" title="Render for me">
-				Render for me
-			</button>
 
-		</span>
-		<div id="processingTime" title="Last processing time">0 ms</div>
 	</div>
+  </div>
+ <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript" src="js/showdown.js"></script>
+    <script type="text/javascript" src="js/showdown-gui.js"></script>
 	</body>
 </html>

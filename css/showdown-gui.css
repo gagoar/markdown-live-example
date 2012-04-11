@@ -92,17 +92,17 @@
 			font-size: 110%;
 		}
 		
-		#paneSetting {
-			display: block;
-			margin-left: auto;
-			margin-right: 0.5em;
-			font-size: 110%;
-			font-weight: 900;
-			font-family: Arial, Verdana, sans-serif;
-			background-color: #dacccc;
-			color: #444;
-			border: 1px solid #999;
-		}
+		/*#paneSetting {*/
+			/*display: block;*/
+			/*margin-left: auto;*/
+			/*margin-right: 0.5em;*/
+			/*font-size: 110%;*/
+			/*font-weight: 900;*/
+			/*font-family: Arial, Verdana, sans-serif;*/
+			/*background-color: #dacccc;*/
+			/*color: #444;*/
+			/*border: 1px solid #999;*/
+		/*}*/
 		
 		.pane {
 			margin: 0;
@@ -203,31 +203,15 @@
 			right: 5em;
 		}
 		
-		#convertTextButton {
-			line-height: 1em;
-			background-color: #ccbfbf;
-			color: #000;
-			border: none;
-		}
+		/*#convertTextButton {*/
+			/*line-height: 1em;*/
+			/*background-color: #ccbfbf;*/
+			/*color: #000;*/
+			/*border: none;*/
+		/*}*/
 		
 		#convertTextButton:hover {
 			background-color: #fff;
 			color: black;
 		}
 		
-		#convertTextSetting {
-			background-color: #dacccc;
-			color: #222;
-			border: 1px solid #999;
-		}
-		
-		#processingTime {
-			margin: 0;
-			padding: 0;
-			width: 4em;
-			text-align: right;
-			color: #999;
-			position: absolute;
-			right: 1em;
-			top: 0;
-		}
